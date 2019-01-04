@@ -31,9 +31,9 @@
   "author": "Akash Verma <akash.mihul@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akash2016/normalizr.git"
+    "url": "https://github.com/akash2016/normalizr/issues"
   },
-  "homepage": "https://github.com/akash2016/normalizr.git",
+  "homepage": "https://github.com/akash2016/normalizr.git#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
