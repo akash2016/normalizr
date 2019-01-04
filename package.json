@@ -1,6 +1,6 @@
 {
   "name": "data-normalizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Function to normalize complex data structure",
   "main": "./lib/index.js",
   "scripts": {
