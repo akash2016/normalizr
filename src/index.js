@@ -1,6 +1,6 @@
 function normalizer(data) {
   const obj = {};
-  if (Array.isArray(data) && data[0].id) {
+  if (data && Array.isArray(data) && data.length && data[0].id) {
     data.forEach((value) => {
       const { id, ...rest } = value;
       if (Object.keys(rest).length) {
@@ -8,7 +8,7 @@ function normalizer(data) {
       }
     });
     return obj;
-  } else if (typeof (data) === 'object' && (!Array.isArray(data)) && Object.keys(data).length) {
+  } else if (data && typeof (data) === 'object' && (!Array.isArray(data)) && Object.keys(data).length) {
     Object.keys(data).forEach((value) => {
       obj[value] = normalizer(data[value]);
     });
