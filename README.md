@@ -10,14 +10,14 @@ Below is an example of how to utilize normalizer. It normalizes array that has i
 var normalizer = require('normalizer');
 
 let data = {
-  fisrt:{
+  first:{
     second:[{id:1, value: 1}],
     third:[{value:3}]
   }
 }
 normalizer(data); 
 
-/*
+
 Output: 
   first:{
     second:{
@@ -27,7 +27,6 @@ Output:
     },
     third:[{value:3}]
   }
-*/
 
 
 # License
