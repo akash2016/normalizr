@@ -1,14 +1,12 @@
-import { assert } from 'chai';
-import defaultAwesomeFunction, { awesomeFunction } from '../src';
+import { expect } from 'chai';
+import normalizer from '../src';
 
-describe('Awesome test.', () => {
-  it('should test default awesome function', () => {
-    const expectedVal = 'I am the Default Awesome Function, fellow comrade! - Dinesh'
-    assert(defaultAwesomeFunction('Dinesh') === expectedVal, 'Default not awesome :(');
-  });
+const input = { first: { second: [{ id: 1, value: 1 }], third: [{ value: 3 }] } };
 
-  it('should test awesome function', () => {
-    const expectedVal = 'I am just an Awesome Function'
-    assert(awesomeFunction() === expectedVal, 'Named awesome :(');
+const output = { first: { second: { 1: { value: 1 } }, third: [{ value: 3 }] } };
+
+describe('normalizer test.', () => {
+  it('should test type of normalizer function', () => {
+    expect(normalizer(input)).to.be.a('object');
   });
 });

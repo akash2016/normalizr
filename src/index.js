@@ -19,4 +19,4 @@ function normalizer(data) {
 
 export default normalizer;
 
-export {normalizer};
+export { normalizer };
