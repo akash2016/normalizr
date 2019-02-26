@@ -1,5 +1,5 @@
 
-# Installation
+# Installations
 
 $ npm install normalizer
 
